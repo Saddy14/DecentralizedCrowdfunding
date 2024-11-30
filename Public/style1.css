@@ -151,6 +151,9 @@ main {
 }
 
 .projectbtn, .projectbtn2 {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
     padding: 0.25rem 0.5rem; /* Reduce padding */
     font-size: 13px; /* Reduce font size */
     color: var(--btn-text);
