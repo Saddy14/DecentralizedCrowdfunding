@@ -82,7 +82,7 @@ main {
 #footer {
     background-color: var(--card-bg);
     padding: 1rem 0;
-    text-align: center;
+    text-align: left; /*! Align text to the left */
     border-top: 1px solid var(--border-color);
     position: relative;
     width: 100%;
@@ -94,7 +94,7 @@ main {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center;
+    justify-content: left; /*! Align text to the left */
     gap: 1rem;
 }
 
