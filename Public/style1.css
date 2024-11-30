@@ -81,13 +81,14 @@ main {
 .projectbtn {
     display: block;
     padding: 0.25rem 0.5rem; /* Reduce padding */
-    font-size: 12px; /* Reduce font size */
+    font-size: 13px; /* Reduce font size */
     color: var(--btn-text);
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
-    /* margin-top: -10px; */
+    margin-bottom: 4px;
+    margin-left: 5px;
 }
 
 #footer {
@@ -126,4 +127,30 @@ main {
     font-size: 0.9rem;
     color: var(--text-color);
     opacity: 0.7;
+}
+
+
+.navbar {
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    gap: 1rem; /* Add space between items */
+    margin-top: -45px; /* Adjust this value to move the navbar upwards */
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--text-color); /* Use your preferred color */
+    padding: 0.5rem 1rem; /* Add padding for better click area */
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: var(--hover-color); /* Use your preferred hover color */
 }
