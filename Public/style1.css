@@ -161,13 +161,14 @@ main {
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
-    margin-bottom: 4px;
+    margin-bottom: 0.7em;
 }
 
 .projectbtn {
-    margin-left: 0; /* Ensure no extra margin on the left */
+    margin-left: 10px; /* Ensure no extra margin on the left */
 }
 
 .projectbtn2 {
     margin-left: auto; /* Push the second button to the right */
+    margin-right: 10px; /* Add margin on the right */
 }
