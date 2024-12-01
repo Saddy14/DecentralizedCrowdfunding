@@ -52,6 +52,11 @@ main {
     margin: 1rem;
 }
 
+project-card small, b {
+    /* font-size: 1.2rem; */
+    margin: 1rem;
+}
+
 .project-card p {
     margin: 0 1rem 1rem;
 }
