@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crowdfunding DApp</title>
+</head>
+<body>
+    <h1>Crowdfunding Platform</h1>
+    <button id="connectButton">Connect MetaMask</button>
+    <p id="accountDisplay">Not connected</p>
+    <p>Please verify your identity with a wallet signature before create a campaign.</p>
+    <hr>
+    
+    <!-- Create Campaign Section -->
+    <div>
+        <h3>Create Campaign</h3>
+        <input type="text" id="campaignName" placeholder="Campaign Name">
+        <input type="text" id="creatorName" placeholder="Creator Name">
+        <input type="text" id="campaignDescription" placeholder="Campaign Description">
+        <input type="number" id="goal" placeholder="Total Goal (wei)">
+        
+        <div id="milestonesContainer">
+            <h3>Milestones</h3>
+            <button type="button" id="addMilestone">Add Milestone</button>
+        </div>
+        
+        <button id="createCampaign" onclick="createCampaign()">Create Campaign (Requires Signature)</button>
+    </div>
+
+    <hr>
+    
+    <!-- List Campaigns Section -->
+    <div>
+        <h3>Available Campaigns</h3>
+        <button id="listCampaigns" onclick="listActiveCampaigns()">Refresh Active Campaigns List</button>
+        <div id="campaignList"></div>
+    </div>
+
+    <hr>
+    
+    <!-- List Completed Campaigns Section -->
+    <div>
+        <h3>Completed Campaigns</h3>
+        <button id="listCompletedCampaigns" onclick="listCompletedCampaigns()">Refresh Completed Campaigns List</button>
+        <div id="completedCampaignList"></div>
+    </div>
+
+    <hr>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
